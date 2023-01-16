@@ -2,7 +2,7 @@
 
 //Datos que cambiará el código de la función manejadora
 let data = {
-  palette: '',
+  palette: '1',
   name: '',
   job: '',
   phone: '',
@@ -13,6 +13,7 @@ let data = {
 
 //Función que va a coger los datos de data, que están en variables, y los va a modificar
 function updatePreview() {
+
   data.name = nameInput.value;
   data.job = jobInput.value;
   data.phone = phoneInput.value;
@@ -51,10 +52,6 @@ function updatePreview() {
     previewGithub.href = `https://github.com/${data.github}`;
   }
 }
-
-// let name = '';
-// let job = '';
-// let email = '';
 
 //Listening in all form. Se le pone un evento de tipu input que empiece a funcionar cada vez que se haga click en un input. Se está escuchando todo el formulario, así que hay que saber en qué input está escribiendo y qué valor ha escrito.
 
